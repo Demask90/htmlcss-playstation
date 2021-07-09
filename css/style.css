@@ -16,6 +16,10 @@ body {
 
 /* FINE COMMON  */
 
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+}
 
 #nav_play{
     height: 80px;
@@ -82,4 +86,32 @@ body {
     }
 
 }
+
+#jumbo_returnal {
+    position: relative;
+    background-image: url(../img/jumbo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#returnal_text {
+    position: absolute;
+    bottom: -50px;
+    left: 60px;
+    width: 30%;
+    color: white;
+}
+
+#returnal_text img{
+    width: 55%;
+}
+
+#returnal_text h2 {
+    font-size: 3em;
+}
+
+
 
