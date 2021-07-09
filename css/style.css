@@ -29,7 +29,6 @@ body {
 #logo_sony {
     height: 30px;
     background-color: black;
-    position: sticky;
 }
 
 #logo_sony a svg {
@@ -93,25 +92,98 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    width: 100%;
     height: 100vh;
 }
 
 #returnal_text {
     position: absolute;
     bottom: -50px;
-    left: 60px;
-    width: 30%;
+    left: 3%;
+    width: 33%;
     color: white;
 }
 
-#returnal_text img{
-    width: 55%;
+#returnal_text #returnal_banner{
+    background-image: url(../img/returnal-hero-banner-logo.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:contain;
+    height: 50px;
 }
 
 #returnal_text h2 {
     font-size: 3em;
 }
 
+@media (max-width: 992px) {
+    #returnal_text{
+        width: 90%;
+    }
+}
 
+.img_portfolio {
+    width: 100%;
+    border: 4px solid transparent;
+    border-radius: 15px;
+}
+
+#portfolio .img-hover-button {
+    position: relative;
+    width:100%;
+    border: 4px solid transparent;
+    border-radius: 15px;
+}
+
+#portfolio .img-hover-button .fa-gavel,
+#portfolio .img-hover-button .fa-user-astronaut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 4.5em;
+    display: none;
+    z-index: 1;
+    color: white;
+}
+
+#portfolio .img-hover-button .background-effect1,
+#portfolio .img-hover-button .background-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    border: 4px solid transparent;
+    border-radius: 15px;
+}
+
+#portfolio .img-hover-button:hover .fa-gavel,
+#portfolio .img-hover-button:hover .fa-user-astronaut {
+    display:inline-block;
+    font-size: 3em;
+}
+
+#portfolio .img-hover-button:hover{
+    border: 4px solid #6397d0;
+    border-radius: 15px;
+}
+
+#portfolio .img-hover-button:hover .background-effect1,
+#portfolio .img-hover-button:hover .background-effect {
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    border-radius: 10px;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+#portfolio .img-hover-button:hover .background-effect {
+    background-color: rgba(0, 100, 100, 0.6);
+}
+
+#portfolio .img-hover-button:hover .background-effect1 {
+    background-color: rgba(143, 0, 255, 0.6);
+}
 
