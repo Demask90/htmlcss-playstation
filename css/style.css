@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COMMON */
+
+.active {
+    text-decoration: none;
+}
+
+/* FINE COMMON  */
+
+
+#nav_play{
+    height: 80px;
+    width: 100vw;
+}
+
+#logo_sony {
+    height: 30px;
+    background-color: black;
+    position: sticky;
+}
+
+#logo_sony a svg {
+    float: right;
+    height: 30px;
+    padding: 8px; 
+}
+
+#nav_left,
+#nav_right{
+    height: 100%;
+}
+
+#nav_right #hamburger {
+    position: relative;
+    display: none;
+    color: black;
+    margin-right: 3px;
+    width: 100%;
+}
+
+#nav_right #hamburger .fa-hamburger {
+    color: black;
+}
+
+#nav_right #hamburger .support-info {
+    position: absolute;
+    top: 63px;
+    right: 0;
+    width: 150px;
+    display: none;
+    line-height: 40px;
+    color: black;
+}
+
+#nav_right #hamburger .support-info a{
+    color: black;
+}
+ 
+#nav_right #hamburger:active .support-info {
+    display: inline-block;
+    background-color: #F8F9FA;
+}
+
+@media (max-width: 992px) {
+
+    #nav_right #hamburger {
+        display: inline-block;
+    }
+
+    #nav_left #navbar_hidden,
+    #nav_right #navbar_hidden {
+        display: none;
+    }
+
+}
+
