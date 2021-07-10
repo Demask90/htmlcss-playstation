@@ -15,6 +15,11 @@ body {
     color: black;
 }
 
+.active_w {
+    text-decoration: none;
+    color: white;
+}
+
 /* FINE COMMON  */
 
 #logo_sony {
@@ -224,3 +229,12 @@ body {
     }
 }
 
+#section_5 {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.img_newgames {
+    width: 100%;
+    border-radius: 20px;
+}
