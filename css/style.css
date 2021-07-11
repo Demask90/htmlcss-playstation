@@ -28,7 +28,7 @@ body {
 }
 
 #nav_play{
-    height: 80px;
+    height: 70px;
 }
 
 #logo_sony a svg {
@@ -60,37 +60,28 @@ body {
 }
 
 .jumbo{
-    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
+    background-position-y: top;
     height: 100vh;
+    width: 100vw;
 }
 
-.jumbo_text {
-    position: absolute;
-    bottom: 8%;
-    left: 3%;
+.jumbo .jumbo_text {
     color: white;
 }
 
-#section_1 .text_returnal{
+#section_1 .returnal .text_returnal{
     width: 40%;
 }
 
-.jumbo .jumbo_text .banner{
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size:contain;
+.returnal .text_returnal .banner img{
+    width: 90%;
 }
 
 #section_1 .returnal {
     background-image: url(../img/jumbo-bg.png);
-}
-
-#section_1 .jumbo_text .retur_nal{
-    background-image: url(../img/returnal-hero-banner-logo.png);
-    height: 80px;
 }
 
 .img_portfolio {
@@ -157,9 +148,6 @@ body {
     background-color: rgba(143, 0, 255, 0.4);
 }
 
-#playstation_console {
-    margin-top: 120px;
-}
 
 #play5 {
     width: 90%;
@@ -168,7 +156,6 @@ body {
 
 #playstation_console img {
     width: 100%;
-    
 }
 
 @media (max-width:768px) {
@@ -186,9 +173,6 @@ body {
 
 #playstation_console #play_items .effect {
     border-bottom: 4px solid transparent;
-    border-right: 2px solid transparent;
-    border-left:2px solid transparent;
-    border-top: 2px solid transparent; 
     transition-duration: 0.4s;
     transition-timing-function: ease;
     filter: opacity(0.5);
@@ -203,18 +187,23 @@ body {
     filter: none
 }
 
+#playstation_console #play_items .effect:hover .img_play5 {
+    filter: drop-shadow(7px 10px 2px grey);
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
 
 #section_4 .it_takes {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    filter: drop-shadow(0.4);
 }
 
-#section_4 .takes_two {
-    background-image: url(../img/it-takes-two-logo.png);
-    height: 160px;
+#section_4 .it_takes .takestwo_text .banner img {
+    width: 70%;
 }
 
-.it_takes .takestwo_text {
-    width: 32%;
+#section_4 .it_takes .takestwo_text {
+    width: 40%;
 }
 
 @media (max-width: 992px) {
@@ -222,11 +211,7 @@ body {
     #section_4 .jumbo .takestwo_text,
     #section_1 .jumbo .text_returnal {
         width: 90%;
-    }
-
-    #section_4 .takes_two {
-        height: 300px;
-    }
+    } 
 }
 
 #section_5 {
