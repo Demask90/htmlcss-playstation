@@ -276,8 +276,7 @@ header #nav_right #hamburger:active #hamburger_dropdown {
     text-decoration: none;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #monthly_games{
         display: none;
     }
@@ -293,7 +292,7 @@ header #nav_right #hamburger:active #hamburger_dropdown {
 }
 
 #section_9 img:first-child {
-    width: 60%;
+    width: 70%;
 }
 
 #section_9 img:last-child {
@@ -305,8 +304,15 @@ header #nav_right #hamburger:active #hamburger_dropdown {
     text-decoration: none;
 }
 
+
 #section_10 #media img{
     width: 100%;
+}
+
+@media (max-width: 767px) {
+    .monthly_games{
+        display: none;
+    }
 }
 
 footer{
