@@ -257,3 +257,63 @@ header #nav_right #hamburger:active #hamburger_dropdown {
 #section_6 #play4_items img{
     width: 100%;
 }
+
+#section_7{
+    background-color: #BEBCBB;
+    color: black;
+}
+
+#section_7 img:first-child {
+    width: 60%;
+}
+
+#section_7 img:last-child {
+    width: 90%;
+}
+
+#section_7 .row a{
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    #monthly_games{
+        display: none;
+    }
+}
+
+#section_8 #play_store img {
+    width: 100%;
+}
+
+#section_9 {
+    background-color: #0A1432;
+    color: white;
+}
+
+#section_9 img:first-child {
+    width: 60%;
+}
+
+#section_9 img:last-child {
+    width: 90%;
+}
+
+#section_9 .row a{
+    background-color: white;
+    text-decoration: none;
+}
+
+#section_10 #media img{
+    width: 100%;
+}
+
+footer{
+    background-color: #00439C;
+    color: white;
+}
+
+footer img {
+    width: 25%;
+}
