@@ -25,11 +25,18 @@ body {
 #logo_sony {
     height: 30px;
     background-color: black;
+    width: 100vw;
 }
 
-#nav_play{
+#nav_play, 
+.sticky{
     height: 70px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
 }
+
 
 #logo_sony a svg {
     float: right;
@@ -37,26 +44,43 @@ body {
     padding: 8px; 
 }
 
-#nav_right .hamburger {
-    position: relative;
+header #nav_right #hamburger {
     display: none;
     color: black;
 }
 
-#nav_right .hamburger .fa-hamburger {
+header #nav_right #hamburger .fa-hamburger {
     color: black;
+}
+
+header #hamburger_dropdown ul li{
+    list-style-type: none;
 }
 
 @media (max-width: 992px) {
 
-    #nav_right .hamburger {
+    header #nav_right #hamburger {
         display: inline-block;
     }
 
-    #nav_left .navbar_hidden,
-    #nav_right .navbar_hidden {
+    header #nav_left .navbar_hidden,
+    header #nav_right .navbar_hidden {
         display: none;
     }
+}
+
+header #hamburger_dropdown {
+    width: 100vw;
+    display: none;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    background-color: white;
+    max-height: 268px;
+    height: 100vh;
+}
+
+header #nav_right #hamburger:active #hamburger_dropdown {
+    display: inline-block;
 }
 
 .jumbo{
@@ -64,20 +88,25 @@ body {
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
+    position: relative;
     height: 100vh;
     width: 100vw;
 }
 
 .jumbo .jumbo_text {
     color: white;
+    z-index: 500;
 }
 
-#section_1 .returnal .text_returnal{
-    width: 40%;
+.opacity_jumbo:not(.jumbo_text){
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
 }
 
 .returnal .text_returnal .banner img{
-    width: 90%;
+    width: 95%;
 }
 
 #section_1 .returnal {
@@ -173,6 +202,7 @@ body {
 
 #playstation_console #play_items .effect {
     border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
     transition-duration: 0.4s;
     transition-timing-function: ease;
     filter: opacity(0.5);
@@ -181,6 +211,7 @@ body {
 
 #playstation_console #play_items .effect:hover {
     border-bottom: 4px solid #4070FF;
+    border-top: 4px solid #4070FF;
     border-radius: 10px;
     transition-duration: 0.4s;
     transition-timing-function: ease;
@@ -188,31 +219,19 @@ body {
 }
 
 #playstation_console #play_items .effect:hover .img_play5 {
-    filter: drop-shadow(7px 10px 2px grey);
+    filter: drop-shadow(5px 5px 2px grey);
     transition-duration: 0.2s;
     transition-timing-function: ease;
 }
 
 #section_4 .it_takes {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-    filter: drop-shadow(0.4);
 }
 
 #section_4 .it_takes .takestwo_text .banner img {
     width: 70%;
 }
 
-#section_4 .it_takes .takestwo_text {
-    width: 40%;
-}
-
-@media (max-width: 992px) {
-
-    #section_4 .jumbo .takestwo_text,
-    #section_1 .jumbo .text_returnal {
-        width: 90%;
-    } 
-}
 
 #section_5 {
     background-color: #1E1E1E;
@@ -222,4 +241,19 @@ body {
 .img_newgames {
     width: 100%;
     border-radius: 20px;
+    padding: 8px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    filter: opacity(0.7);
+}
+
+.img_newgames:hover {
+    padding: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    filter: none;
+}
+
+#section_6 #play4_items img{
+    width: 100%;
 }
