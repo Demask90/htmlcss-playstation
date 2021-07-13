@@ -79,7 +79,7 @@ header #hamburger_dropdown {
     height: 100vh;
 }
 
-header #nav_right #hamburger:active #hamburger_dropdown {
+header #nav_right a #hamburger:focus #hamburger_dropdown {
     display: inline-block;
 }
 
@@ -194,15 +194,8 @@ header #nav_right #hamburger:active #hamburger_dropdown {
     }
 }
 
-@media (max-width:992px) {
-    #playstation_console #play5{
-        margin-top: 40px;
-    }
-}
-
 #playstation_console #play_items .effect {
     border-bottom: 4px solid transparent;
-    border-top: 4px solid transparent;
     transition-duration: 0.4s;
     transition-timing-function: ease;
     filter: opacity(0.5);
@@ -211,7 +204,6 @@ header #nav_right #hamburger:active #hamburger_dropdown {
 
 #playstation_console #play_items .effect:hover {
     border-bottom: 4px solid #4070FF;
-    border-top: 4px solid #4070FF;
     border-radius: 10px;
     transition-duration: 0.4s;
     transition-timing-function: ease;
@@ -229,7 +221,7 @@ header #nav_right #hamburger:active #hamburger_dropdown {
 }
 
 #section_4 .it_takes .takestwo_text .banner img {
-    width: 70%;
+    width: 50%;
 }
 
 
